@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kechyyHotel';
+
+  hidden = false;
+
+  toggleBadgeVisibility(): boolean {
+    return this.hidden = !this.hidden;
+  }
 }
