@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'wedding',
     loadChildren: () => import('./wedding/wedding.module').then((m) => m.WeddingModule),
   },
+
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  },
   /*{path: '**', component: PageNotFoundComponent, data: {state: 'page-not-found'}},*/
 ];
 
